@@ -14,7 +14,7 @@
 		</ui:define>
 	</head>
 
-	<body>
+	<h:body>
 		<ui:define name="body">
 			<div class="div-001">
 				<h:form id="form-cliente" styleClass="form-001" >
@@ -86,7 +86,6 @@
 							<p:column headerText="RISCO" style="width:50px">
 								<p:cellEditor>
 									<f:facet name="output"><h:outputText value="#{cliente.risco}" /></f:facet>
-								
 									<f:facet name="input">
 										<p:selectOneMenu value="#{cliente.risco}" style="width:150px" required="true">
 			            					<f:selectItem itemLabel="A (0% )" itemValue="A" />
@@ -111,6 +110,7 @@
 							<p:column style="width:40px; background-color:#ebebeb;">
 					           <p:rowEditor />
 					       </p:column>
+					       
 						</p:dataTable>
 					</div>
 				</h:form>
@@ -123,5 +123,5 @@
 			 </h3>
 		</ui:define>
 		
-	</body>
+	</h:body>
 </ui:composition>
