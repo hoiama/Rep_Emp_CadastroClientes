@@ -1,74 +1,102 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.dbccompany.com.br</groupId>
-  <artifactId>dbccompany</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  
-  <dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.dbccompany.com.br</groupId>
+	<artifactId>dbccompany</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
-		<!-- JSF MOJARRA -->
+	<dependencies>
+
+
+		<!--**************** -->
+		<!-- JSP -->
+		<!--**************** -->
+
+		<!-- Mojarra -->
 		<dependency>
 			<groupId> org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
 			<version>2.2.0</version>
 			<scope>compile</scope>
 		</dependency>
-		
-		<!-- Primefaces  -->
+
+
+
+		<!--**************** -->
+		<!-- PRIMEFACES -->
+		<!--**************** -->
+
+		<!-- Primefaces -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
 			<version>6.1</version>
 		</dependency>
-			
-		<!-- PRIMEFACES THEMES -->
+
+		<!-- themes -->
 		<dependency>
-		    <groupId>org.primefaces.themes</groupId>
-		    <artifactId>bootstrap</artifactId>
-		    <version>1.0.10</version>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>1.0.10</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.primefaces.themes</groupId>
 			<artifactId>all-themes</artifactId>
 			<version>1.0.10</version>
 		</dependency>
-	
+
+
+
+		<!--**************** -->
+		<!-- PERSISTENCIA -->
+		<!--**************** -->
+
 		<!-- HIBERNATE -->
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-core</artifactId>
-		    <version>5.2.12.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.12.Final</version>
 		</dependency>
-		
-		
-		<!-- POSTGRESQL CONNECTOR -->
+
+
+
+		<!--**************** -->
+		<!-- BANCO DE DADOS -->
+		<!--**************** -->
+
+		<!--Dependencia do PostgreSQL, -Drive -->
 		<dependency>
-		    <groupId>postgresql</groupId>
-		    <artifactId>postgresql</artifactId>
-		    <version>9.1-901-1.jdbc4</version>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.2</version>
 		</dependency>
-		
+
+		<!--Dependencia do H2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.196</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-	 
-	 
-	 <repositories>
-	 
+
+
+	<repositories>
 		<repository>
 			<id>prime-repo</id>
 			<name>Prime Repo</name>
 			<url>http://repository.primefaces.org</url>
 		</repository>
-		
 	</repositories>
-	 
-	 
-	 
-  	<build>
-  		<plugins>
-  		
-	  		<plugin>
+
+
+
+	<build>
+		<plugins>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
@@ -76,16 +104,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
-  		
-  			<plugin>
-  				<groupId>org.apache.maven.plugins</groupId>
-  				<artifactId>maven-compiler-plugin</artifactId>
-  					<configuration>
-  						<source>1.8</source>
-  						<target>1.8</target>
-  					</configuration>
-  			</plugin>
-  		</plugins>
-  	</build>
-  
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

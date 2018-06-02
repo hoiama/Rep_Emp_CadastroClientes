@@ -8,7 +8,6 @@ import javax.faces.bean.ViewScoped;
 import org.primefaces.event.RowEditEvent;
 import br.com.transpobrasil.controller.Controller;
 import br.com.transpobrasil.model.dao.EditarCliente;
-import br.com.transpobrasil.model.dao.Funcao;
 import br.com.transpobrasil.model.dao.SalvarCliente;
 import br.com.transpobrasil.model.entity.Cliente;
 
@@ -23,15 +22,13 @@ public class DashBoardBean  implements Serializable{
 	private List<Cliente> clientesSelecionados = new ArrayList<>();
 	Controller serviceController = new Controller();
 	
-	Funcao salvar = new SalvarCliente();
-	Funcao editar = new EditarCliente();
 	
 	public void salvar (){
-		serviceController.executar(cliente, salvar);
+		serviceController.executar(cliente, new SalvarCliente());
 	}
 	
 	public void editar (RowEditEvent event){ 
-		serviceController.executar((Cliente) event.getObject(), editar);
+		serviceController.executar((Cliente) event.getObject(), new EditarCliente());
 	}
 	
 	public void deletar(){
@@ -46,10 +43,6 @@ public class DashBoardBean  implements Serializable{
 		cliente = new Cliente();	
 	}
 
-	
-	
-	
-	
 	public Cliente getCliente() {
 		return cliente;
 	}
@@ -82,8 +75,15 @@ public class DashBoardBean  implements Serializable{
 		this.clientesSelecionados = clientesSelecionados;
 	}
 
-	
+	public Controller getServiceController() {
+		return serviceController;
+	}
 
-	
+	public void setServiceController(Controller serviceController) {
+		this.serviceController = serviceController;
+	}
 
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 }

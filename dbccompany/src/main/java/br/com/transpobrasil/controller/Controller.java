@@ -1,6 +1,5 @@
 package br.com.transpobrasil.controller;
 
-
 import java.util.List;
 import br.com.transpobrasil.model.dao.ClienteDAO;
 import br.com.transpobrasil.model.dao.Funcao;

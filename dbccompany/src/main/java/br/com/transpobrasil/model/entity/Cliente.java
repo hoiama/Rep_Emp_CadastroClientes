@@ -1,35 +1,25 @@
 package br.com.transpobrasil.model.entity;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-
-
 
 @Entity
 public class Cliente {
 
-	
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
-   
+
 	private String endereco;
-    private String nome;
+	private String nome;
 	private String limiteCredito;
-    private String risco;
-    private int juros;
-    
-    
-    
-    
-    
+	private String risco;
+	private int juros;
+
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -38,6 +28,13 @@ public class Cliente {
 		this.id = id;
 	}
 
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
 
 	public String getNome() {
 		return nome;
@@ -63,14 +60,6 @@ public class Cliente {
 		this.risco = risco;
 	}
 
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-
 	public int getJuros() {
 		return juros;
 	}
@@ -78,14 +67,5 @@ public class Cliente {
 	public void setJuros(int juros) {
 		this.juros = juros;
 	}
-
-	
-
-	
-	
-	
-	
-
-	/* HASHVODE */
 
 }

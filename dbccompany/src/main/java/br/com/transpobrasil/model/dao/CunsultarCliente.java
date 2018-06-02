@@ -3,7 +3,7 @@ package br.com.transpobrasil.model.dao;
 import javax.persistence.EntityManager;
 import br.com.transpobrasil.model.entity.Cliente;
 
-public class CunsultarCliente extends DAO implements Funcao{
+public class CunsultarCliente extends DAO implements Funcao {
 
 	@Override
 	public boolean executa(Cliente cliente) {
