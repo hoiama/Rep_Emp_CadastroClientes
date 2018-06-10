@@ -1,9 +1,0 @@
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/dao/ClienteDAO.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/controller/Controller.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/bean/DashBoardBean.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/dao/SalvarCliente.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/dao/CunsultarCliente.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/entity/Cliente.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/dao/DAO.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/dao/EditarCliente.java
-/media/hoiama/DADOS/DADOS/8_Softwares/0_EmUso/0_Projetos/SistemasWeb/0_Git/Rep_Emp_dbccompany/dbccompany/src/main/java/br/com/transpobrasil/model/dao/Funcao.java
