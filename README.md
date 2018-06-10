@@ -12,8 +12,7 @@
 
 OBJETIVOS DO SISTEMA: 
 
-	Sistema para manter cadastros de clientes e seus limites de crédito. camada visual(front-end), um
-	serviço para salvar o cadastro de clientes e outro para realizar o cálculo de juros. Criar testes 		unitários para garantir o bom funcionamento do código. Documentar o código e criar um 	arquivo 	"Manual" para orientar o analista e usuário para como iniciar e testar a sua solução.
+	Sistema para manter cadastros de clientes e seus limites de crédito. camada visual(front-end), um serviço para salvar o cadastro de clientes e outro para realizar o cálculo de juros. Criar testes unitários para garantir o bom funcionamento do código. Documentar o código e criar um 	arquivo "Manual" para orientar o analista e usuário para como iniciar e testar a sua solução.
 
 
 	FLUXO DE APLICAÇÃO
