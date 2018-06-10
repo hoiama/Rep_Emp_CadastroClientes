@@ -7,7 +7,7 @@
 	- Servidor Tomcat 9
 	- Maven
 
-<p align="center"> <img src="/dbccompany/printScreen/screen1.png" width="950"/></p>
+<p align="center"> <img src="/CadastroClientes/printScreen/screen1.png" width="950"/></p>
 
 
 OBJETIVOS DO SISTEMA: 
