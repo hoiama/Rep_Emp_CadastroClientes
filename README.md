@@ -1,5 +1,8 @@
 <h2><p align="center"> Cadastro de Clientes </p></h2>
 
+
+TECNOLOGIAS:
+
 	- JSF
 	- Primefaces
 	- Hibernate
